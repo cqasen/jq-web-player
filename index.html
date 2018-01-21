@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ai 音乐,爱生活,更爱自己</title>
+    <meta name="keywords" content="ai 音乐,爱生活,更爱自己">
+    <meta name="description" content="ai 音乐,爱生活,更爱自己">
+    <meta name="author" content="小森同学">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/layer/2.1/mobile/need/layer.css" type="text/css"/>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css"/>
+    <link rel="stylesheet" href="./css/player.css" type="text/css"/>
+
+</head>
+<body>
+<header id="my-header" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <h3>ai 音乐,爱生活,更爱自己</h3>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="input-group pull-left">
+                    <input type="text" class="form-control" name="search-keyword" id="search-keyword" value=""
+                           placeholder="请输入要搜索的歌曲或歌星"/>
+                </div>
+                <button type="button" class="btn" id="search-but">搜索</button>
+            </div>
+        </div>
+    </div>
+
+</header>
+<div id="my-list" class="container">
+
+    <div class="row" id="song-list">
+
+    </div>
+
+    <div class="row" id="song-show">
+        <div class="col-sm-12 col-md-12 song-cover">
+            <img src="" class="show-song-cover">
+        </div>
+        <div class="col-sm-12 col-md-12">
+            <h4 class="show-song-name"></h4>
+            <p class="show-songer"></p>
+        </div>
+    </div>
+
+</div>
+<footer id="my-footer" class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+        <audio id="player" src=""></audio>
+        <div class="row" id="my-player">
+            <div class="col-sm-12 col-md-12 timeline-operators">
+                <span class="time-range">
+                    <input id="player-time-line" type="range" value="0" name="timeline" step="1" min="0" max="100"/>
+                </span>
+            </div>
+            <div class="col-sm-12 col-md-12 play-operators">
+                <i class="ion ion-skip-backward" id="pre-control"></i>
+                <i class="ion ion-play" id="player-control" data-songid="" data-index=""></i>
+                <i class="ion ion-skip-forward" id="next-control"></i>
+                <i class="ion-ios-volume-high" id="volume-control"></i>
+                <span class="volume-range">
+                    <input id="player-volume" type="range" value="0.5" name="volume" step="0.01" min="0" max="1"/>
+                </span>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="http://apps.bdimg.com/libs/layer/2.1/layer.js"></script>
+<script src="./js/player.js"></script>
+
+</html>

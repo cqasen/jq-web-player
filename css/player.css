@@ -1,0 +1,173 @@
+#song-list .media-object {
+    height: 100px;
+}
+
+#song-list {
+    margin: 20px 0px;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotation {
+    -webkit-transform: rotate(360deg);
+    animation: rotation 3s linear infinite;
+    -moz-animation: rotation 3s linear infinite;
+    -webkit-animation: rotation 3s linear infinite;
+    -o-animation: rotation 3s linear infinite;
+}
+
+.pause {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
+#my-header {
+    height: 95px;
+    overflow: hidden;
+    display: block;
+    border-bottom: 2px #ddd solid;
+
+}
+
+#my-footer {
+
+    overflow: hidden;
+    display: block;
+}
+
+#song-pic {
+    border-radius: 60px;
+    line-height: 120px;
+    margin: 4px;
+}
+
+#my-list {
+    margin-top: 97px;
+    margin-bottom: 72px;
+}
+
+#my-player .song-info {
+
+    overflow: hidden;
+    display: block;
+    padding: 4px;
+}
+
+#my-player .song-info .songname {
+
+}
+
+#my-player .song-info .songer {
+    margin-top: 10px;
+}
+
+#song-pic, #song-control {
+    width: 64px;
+    height: 64px;
+}
+
+#my-player .play-operators {
+    margin: 0px 0px 10px 0;
+    height: 50px;
+    line-height: 50px;
+}
+
+#my-player .timeline-operators {
+    margin: 15px 0px 5px;
+    height: 10px;
+    line-height: 10px;
+}
+
+#my-player .ion {
+    margin: 5px 10px;
+    font-size: 22px;
+    border-radius: 20px;
+    border: 1px solid #FFCD32;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFCD32;
+}
+
+#my-player #volume-control {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 5px 5px 5px 10px;
+
+}
+
+#my-player .volume-range {
+    width: 80px;
+    display: inline-flex;
+}
+
+#my-player .time-range {
+    height: 100%;
+}
+
+/*横条样式*/
+input[type=range] {
+    -webkit-appearance: none; /*清除系统默认样式*/
+    width: 100%;
+    background: -webkit-linear-gradient(#61bd12, #61bd12) no-repeat, #ddd; /*设置左边颜色为#61bd12，右边颜色为#ddd*/
+    height: 3px; /*横条的高度*/
+}
+
+/*时间线*/
+.time-range input[type=range] {
+    background-size: 0% 100%; /*设置左右宽度比例*/
+}
+
+/*音量*/
+.volume-range input[type=range] {
+    background-size: 50% 100%; /*设置左右宽度比例*/
+}
+
+/*拖动块的样式*/
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; /*清除系统默认样式*/
+    height: 18px; /*拖动块高度*/
+    width: 18px; /*拖动块宽度*/
+    background: #fff; /*拖动块背景*/
+    border-radius: 50%; /*外观设置为圆形*/
+    border: solid 1px #ddd; /*设置边框*/
+}
+
+#song-show {
+    display: none;
+
+}
+
+#song-show .show-song-cover {
+    width: 200px;
+    border-radius: 100px;
+}
+
+#song-show .show-song-name {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#song-show .show-songer {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#song-show .song-cover {
+    text-align: center;
+    margin: 20px 0px;
+}
